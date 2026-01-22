@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todoapp.css">
+
+    <title>Modern To-Do App</title>
+</head>
+
+<body>
+
+    <div class="todo-container">
+        <h2>My To-Do List</h2>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Enter a task...">
+            <button id="add-btn">Add</button>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script>
+        const input = document.getElementById("task-input");
+        const addBtn = document.getElementById("add-btn");
+        const taskList = document.getElementById("task-list");
+
+        function addTask() {
+            const taskText = input.value.trim();
+            if (taskText === "") return;
+
+            const li = document.createElement("li");
+            li.innerHTML = `
+            ${taskText}
+            <button class="delete-btn">X</button>`;
+          
+            li.querySelector(".delete-btn").addEventListener("click", () => {
+                li.remove();
+            });
+
+            taskList.appendChild(li);
+            input.value = "";
+        }
+
+        addBtn.addEventListener("click", addTask);
+
+        input.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") addTask();
+        });
+    </script>
+
+</body>
+
+</html>
