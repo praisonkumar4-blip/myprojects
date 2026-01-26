@@ -61,6 +61,4 @@ All the following projects are **integrated inside the portfolio** and can be ac
 
 ## 🚀 How to Run the Project Locally
 
-1. Clone or download the repository
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+1. Go to the browser and create the new tab and copy the link and paste in the search field https://praisonprojects.netlify.app
