@@ -33,7 +33,7 @@ I enjoy learning new technologies and improving my frontend development skills.
 
 ---
 
-##  Projects Included (Accessible via Portfolio)
+##  Projects Included (Please open at new tab)
 
 All the following projects are **integrated inside the portfolio** and can be accessed by clicking the project cards:
 
